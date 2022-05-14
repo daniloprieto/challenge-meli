@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/daniloprieto/challenge-meli/issues"
   },
-  "homepage": "https://github.com/daniloprieto/challenge-meli#readme"
+  "homepage": "https://github.com/daniloprieto/challenge-meli#readme",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
 }
