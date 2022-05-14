@@ -26,5 +26,8 @@
   "homepage": "https://github.com/daniloprieto/challenge-meli#readme",
   "devDependencies": {
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
