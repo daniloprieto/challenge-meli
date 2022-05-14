@@ -1,14 +1,14 @@
 import express from 'express';
 import itemsRouter from './routes/items';
-import { HttpError } from './utils/HttpError';
+import { HttpError } from './shared/error';
 
 const app = express();
 app.use(express.json());
 
-const PORT = 4200;
+const PORT = 3000;
 
 app.use((_req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3001");
   res.setHeader("Access-Control-Allow-Methods", "GET");
   res.setHeader(
     "Access-Control-Allow-Headers",
