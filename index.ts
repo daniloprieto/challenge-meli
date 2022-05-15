@@ -1,11 +1,14 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import itemsRouter from './routes/items';
 import { HttpError } from './shared/error';
 
-const app = express();
-app.use(express.json());
+dotenv.config();
 
-const PORT = 3000;
+const app = express();
+const PORT = process.env.PORT;
+
+app.use(express.json());
 
 app.use((_req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3001");
@@ -21,8 +24,8 @@ app.use((_req, res, next) => {
 
 app.use('/api/items', itemsRouter);
 
-app.use((_req, _res, nex) => {
-  return nex(new HttpError(404, "Route not found"));
+app.use((_req, _res, next) => {
+  return next(new HttpError(404, "Route not found"));
 });
 
 app.use((error: any, _req: any, res: any, next: any) => {
@@ -34,5 +37,5 @@ app.use((error: any, _req: any, res: any, next: any) => {
 });
 
 app.listen(PORT, () => {
-  console.log('Server on port ', PORT)
+  console.log('Server listen on port ', PORT)
 })

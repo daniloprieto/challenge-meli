@@ -9,3 +9,5 @@ export const search: RequestHandler<any> = (req, res, next) => {
 }
 
 router.get('/', search);
+
+export default router;
