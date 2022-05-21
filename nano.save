@@ -1,0 +1,5 @@
+
+API = "api.mercadolibre.com/";
+AUTHOR_NAME = "Angel David";
+export const environment = {
+
