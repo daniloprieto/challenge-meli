@@ -1,12 +1,13 @@
 @import '../../globals.scss';
 
 .layout{
-    display: block;
+    width: 100vw;
     margin:0 auto;
+    padding: 0;
 
 }
 .layout__wrapper{
-    display: block;
-    max-width: 70vw;
+    width: 70vw;
     margin: 0 auto;
+    padding: 0;
 }

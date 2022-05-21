@@ -7,9 +7,9 @@
 }
 
 .nav{    
-    width: 70vw;
+    max-width: 70vw;
     display:grid;
-    grid-template-columns: 10% auto;
+    grid-template-columns: 10% 90%;
     margin: 0 auto;
     & img{
         width:auto;
@@ -31,7 +31,6 @@
 }
 
 .nav__search__input{
-    width: 100%;
     height: 46px;
     margin: 0;
     position: relative;
