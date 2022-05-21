@@ -6,9 +6,9 @@ import './layout.scss';
 
 export const Layout = () => {
   return (
-    <div className="container">
+    <div className="layout">
       <Header />
-      <div className="wrapper">
+      <div className="layout__wrapper">
         <Breadcrumb />
         <Product />
       </div>

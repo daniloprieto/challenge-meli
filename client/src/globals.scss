@@ -1,16 +1,16 @@
-$background: #ededed;
-
-$black:#000;
-$white:#FFF;
-
-$text1:rgba(0,0,0,.8);
-$text2:rgba(0,0,0,.45);
-$text3:#666;
-
+$black:#333333;
+$white:#EEEEEE;
+$gray-dark:#666666;
+$gray-light:#999999;
 $green:#00a650;
-$blue1:#1e6dff;
-$blue2:#2968c8;
-$yellow:#fff159;
+$blue:#3483fa;
+$yellow:#ffe600;
+
+$background: $white;
+
+$text1:rgba(0, 0, 0, 0.8);
+$text2:rgba(0,0,0,.45);
+$text3:$gray-dark;
 
 $border:#ddd;
 

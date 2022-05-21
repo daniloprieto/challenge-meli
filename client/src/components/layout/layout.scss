@@ -1,8 +1,12 @@
 @import '../../globals.scss';
 
-.container{
+.layout{
+    display: block;
+    margin:0 auto;
 
 }
-.wrapper{
-    max-width: 1183px;
+.layout__wrapper{
+    display: block;
+    max-width: 80vw;
+    margin: 0 auto;
 }

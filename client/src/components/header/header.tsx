@@ -4,8 +4,8 @@ import logo from "../../assets/images/logo.png";
 
 export const Header = () => {
   return (
-   <header>
-      <nav>
+   <header className='header'>
+      <nav className='nav'>
         <img src={ logo } alt="logo Meli" />  
       </nav>
    </header>
