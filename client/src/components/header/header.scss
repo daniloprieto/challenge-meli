@@ -1,0 +1,19 @@
+@import '../../globals.scss';
+
+header{
+    width: 100vw;
+    background-color: $yellow;
+    height: 100px;
+}
+
+nav{
+    max-width: 1200px;
+    padding: 8px 8px;
+    margin: 0 auto;
+    height: 91px;
+}
+
+img{
+    width:133px;
+    height: 33px;
+}
