@@ -5,8 +5,8 @@ export class ItemService {
 
     static baseUrl: string = 'http://localhost:3000/api/';
     
-    static search():Promise<any>{
-      return axios.get(this.baseUrl+'items')
+    static search(query:string = 'zapatilla'):Promise<any>{
+      return axios.get(this.baseUrl+'items?q='+query)
     }
 
     static getItem(id:string):Promise<Item>{

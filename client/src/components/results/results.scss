@@ -1,0 +1,49 @@
+@import '../../globals.scss';
+
+.itemList{
+    background-color: #fff;
+}
+
+.itemList__item{
+    min-width: 100%;
+    display: grid;
+    background-color: #fff;
+    box-shadow: $shadow;
+    grid-template-columns: (180px + ($margin-small * 2)) 60% auto;
+    font-family: $family;
+    text-decoration: none;
+    padding: $margin-small;
+    margin-bottom: 0.25%;
+    & > img{
+        width: 180px;
+        height: 180px;
+        object-fit: scale-down;
+        border-radius: 4px;
+        box-shadow: $shadow;
+        margin-right: $margin-small;
+    }
+    & > div{
+        font-weight: 400;
+        color:$black;
+        height: 100%;
+        padding-top: $margin-small;
+        width:70%;
+        & > span{
+            font-family: $family;
+            font-size: 24px;
+            font-weight: lighter;
+        }
+        & > p{
+            padding-top: $margin-medium;
+            font-family: $family;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    }
+    & > span{
+        padding-top: $margin-big;
+        font-size: 12px;
+        font-weight: lighter;
+        color: $gray-light;
+    }
+}

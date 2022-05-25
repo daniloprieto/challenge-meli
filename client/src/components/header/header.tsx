@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.scss';
 import logo from "../../assets/images/logo.png";
+import { useNavigate } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -14,12 +15,23 @@ export const Header = () => {
 }
 
 const Searcher = () => {
+  
+  const [ searchInput, setSearchInput ] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    if (searchInput !== '') navigate(`/items?search=${decodeURI(searchInput)}`);
+    else navigate('/');
+  }
+  
   return (
     <form
       className="nav__search"
       action="https://www.mercadolibre.com.ar/jm/search"
       method="GET"
       role="search"
+      onSubmit={handleSubmit}
       >
       <input
         type="text"
@@ -38,7 +50,9 @@ const Searcher = () => {
         aria-autocomplete="list"
         id="cb1-edit"
         aria-expanded="false"
-        role="combobox" />
+        role="combobox"
+        onChange={(e: any) => setSearchInput(e.target.value)}
+        value={searchInput}/>
       <button
           type="submit"
           className="nav__search__btn"

@@ -183,3 +183,22 @@ export interface Price{
     exchange_rate_context: string;
     metadata: any;
 }
+
+
+export interface Category{
+    id: string;
+    name: string;
+    type: string;
+    values: CategoryValue[];
+}
+
+export interface CategoryValue {
+    id: string;
+    name: string;
+    path_from_root: Path_from_root[];
+}
+
+export interface Path_from_root{
+    id: string
+    name: string;
+}
