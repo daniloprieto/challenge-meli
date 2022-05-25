@@ -33,7 +33,6 @@ const Searcher = () => {
         spellCheck="false"
         autoComplete="off"
         tabIndex={3}
-        value=""
         aria-activedescendant=""
         aria-controls="cb1-list"
         aria-autocomplete="list"
